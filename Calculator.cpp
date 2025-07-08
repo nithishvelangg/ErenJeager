@@ -34,7 +34,13 @@ int main() {
 			Result = num1 / num2;
 			std::cout << "Result: " << Result << std::endl;
 			break;
-
+	case '^':
+		        Result = num1 ^ num2;
+		        std::cout << "Result: " << Result << std::endl;
+		        break;
+		default:
+		std::cout << "Invalid operator. Please use +, -, *, /, or ^." << std::endl;
+		return 1; // Exit with an error code	
 
 	}
 }
